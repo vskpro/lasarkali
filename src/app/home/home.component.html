@@ -1,0 +1,45 @@
+<div class="min-height-100 hero">
+    <div class="hero-text">
+        <h1>We make products <br>that you would love to use.</h1>
+        <button [routerLink]="['/about']" class="btn btn-hero">Know More</button>
+    </div>
+</div>
+
+<div class="home-about">
+    <h1>We improve your quality of life.</h1>
+    <div class="middle">
+        <p>We value integrity without compromise and aim for excellence by delivering state-of-the-art, high-grade products for everyday life.
+        <!-- <p>
+            We believe in providing quality household commodities at competitive prices for the contemporary society.
+            Our
+            Mission is to triumph in providing the finest products without compromising on quality.
+        </p> -->
+        <br>
+        <br>
+        <button [routerLink]="['/about']" class="btn btn-hero">Know More</button>
+    </div>
+</div>
+
+<div class="home-products">
+    <span class=bg-layer>Products</span>
+    <div class="heading">Our Products</div>
+    <div class="products-wrapper clearfix">
+        <div class="product" *ngFor="let product of products">
+            <div class="p-box">
+                <div class="image">
+                    <img [src]="product.image_url" alt="" class="img-auto">
+                </div>
+                <div class="content">
+                    <div class="title">{{product.title}}</div>
+                    <div class="sub-title" [innerHTML]="product.tagline"></div>
+                    <a class="button" routerLink="product-details/{{product.link}}">
+                        <button class="btn learn-more-white">Learn More</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="padding text-center">
+            <a routerLink="products" class="btn text-center btn-white">View All</a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,22 @@
+.center {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-40%);
+    text-align: center;
+}
+
+.btn-red {
+    border: 2px solid maroon;
+    padding: 10px 20px;
+    display: inline-block;
+    color: maroon;
+    font-weight: 700;
+    margin: 10px auto;
+    transition: all 0.2s;
+}
+
+.btn-red:hover {
+    background-color: maroon;
+    color: white;
+}

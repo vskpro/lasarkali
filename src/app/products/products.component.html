@@ -1,0 +1,20 @@
+<div class="page-top-spacing">
+    <div class="home-products">
+      <div class="products-wrapper clearfix">
+        <div class="product" *ngFor="let product of products">
+          <div class="p-box">
+            <div class="image">
+              <img [src]="product.image_url" alt="" class="img-auto">
+            </div>
+            <div class="content">
+              <div class="title">{{product.title}}</div>
+              <div class="sub-title" [innerHTML]="product.tagline"></div>
+              <a class="button" routerLink="/product-details/{{product.link}}">
+                <button class="btn learn-more-white">Learn More</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

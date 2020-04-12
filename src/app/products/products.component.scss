@@ -1,0 +1,66 @@
+.products-wrapper {
+    // background-image: url('/assets/images/curves.svg');
+    background-image: url('/assets/images/product-bg.svg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 2rem 0;
+    @media screen and (max-width: 767px) {
+        padding: 1rem 0;
+    }
+}
+
+.product {
+    width: 33.33%;
+    float: left;
+    text-align: center;
+    display: block;
+    .p-box {
+        max-width: 400px;
+        background: white;
+        margin: 2.5rem auto;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        .content {
+            padding: 1rem 1rem;
+            background-color: #eeeeee;
+            min-height: 10rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: #414141;
+            .title {
+                font-weight: 600;
+                font-size: 1.25rem;
+            }
+            .sub-title {
+                font-size: 1rem;
+                margin-top: .25rem;
+            }
+            .btn.learn-more-white {
+                border: 1px solid #be1e2d;
+                padding: .55rem 1rem;
+                margin-top: .85rem;
+                background-color: #be1e2d;
+                box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+                color: #ffffff;
+                font-weight: 600;
+                text-transform: uppercase;
+            }
+        }
+    }
+    @media screen and (max-width: 1400px) {
+        width: 33.33%;
+    }
+    @media screen and (max-width: 991px) {
+        width: 50%;
+        .p-box {
+            margin: 1rem auto;
+        }
+    }
+    @media screen and (max-width: 767px) {
+        width: 100%;
+        .p-box {
+            margin: .5rem auto;
+        }
+    }
+}

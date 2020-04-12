@@ -1,0 +1,178 @@
+.hero {
+    background-image: url('/assets/images/lasarkali-hero-bg.svg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; 
+    background-attachment: fixed;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .hero-text {
+        position: absolute;
+        top: 40%;
+        transform: translateY(-40%);
+        text-align: center;
+        h1 {
+            font-weight: 600;
+            font-size: 3.5rem;
+            margin: 1rem 0;
+        }
+        .btn-hero {
+            border: 2px solid #be1e2d;
+            padding: .65rem 1.5rem;
+            font-size: .9rem;
+            transition: .25s;
+            text-transform: uppercase;
+            background-color: #be1e2d;
+            font-weight: 600;
+            color: white;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+        }
+    }
+    @media screen and (max-width: 767px) {
+        background-size: cover;
+        background-position: bottom;
+        .hero-text {
+            top: 40%;
+            transform: translateY(-40%);
+            h1 {
+                font-size: 1.95rem;
+            }
+            .btn-hero {
+                font-size: .85rem;
+                padding: .45rem 1.25rem;
+            }
+        }
+    }
+}
+
+.home-about {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-height: 50vh;
+    padding: 10rem 2rem;
+    background: url('/assets/images/straight.svg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #e0e0e0;
+    h1 {
+        font-size: 3.65rem;
+        text-align: center;
+    }
+    .middle {
+        max-width: 600px;
+        margin: 0 auto;
+        font-size: 1.25rem;
+        margin-top: 1rem;
+    }
+    @media screen and (max-width: 767px) {
+        align-items: flex-start;
+        padding: 3rem 1.5rem;
+        h1 {
+            font-size: 2rem;
+            text-align: left;
+        }
+    }
+}
+
+.home-products {
+    padding: 5rem 0rem;
+    position: relative;
+    padding-bottom: 0;
+    .heading {
+        font-size: 3rem;
+        text-align: center;
+        font-weight: bold;
+        padding-bottom: 5rem;
+    }
+    .bg-layer {
+        display: inline-block;
+        font-size: 6rem;
+        font-weight: bold;
+        color: rgba(0, 0, 0, 0.06);
+        position: absolute;
+        top: 5%;
+        left: 0%;
+        left: 0%;
+    }
+    @media screen and (max-width: 767px) {
+        padding: 1rem 0;
+        .heading {
+            font-size: 2rem;
+            padding: 1rem 0;
+        }
+        .bg-layer {
+            top: 10%;
+            font-size: 3.15rem;
+            display: none;
+        }
+    }
+}
+
+.products-wrapper {
+    background-image: url("/assets/images/straight.svg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.product {
+    width: 33.33%;
+    float: left;
+    text-align: center;
+    .p-box {
+        max-width: 500px;
+        background: white;
+        margin: 2.5rem auto;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        .content {
+            padding: 2rem 1rem;
+            background-color: #eeeeee;
+            min-height: 10rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .title {
+                font-weight: 600;
+                font-size: 1.25rem;
+            }
+            .sub-title {
+                font-size: 1rem;
+                color: #3f3f3f;
+                margin-top: .25rem;
+            }
+            .btn.learn-more-white {
+                border: 1px solid #be1e2d;
+                padding: .55rem 1rem;
+                margin-top: .85rem;
+                background-color: #be1e2d;
+                box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+                color: white;
+                font-weight: 600;
+                text-transform: uppercase;
+            }
+        }
+    }
+    @media screen and (max-width: 991px) {
+        width: 100%;
+        .p-box {
+            margin: 0 auto;
+        }
+    }
+}
+
+.btn-hero {
+    border: 2px solid #be1e2d;
+    padding: .65rem 1.5rem;
+    font-size: .9rem;
+    transition: .25s;
+    text-transform: uppercase;
+    background-color: #be1e2d;
+    font-weight: 600;
+    color: white;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}

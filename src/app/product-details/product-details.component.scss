@@ -1,0 +1,87 @@
+.product-data {
+    min-height: 85vh;
+    .image-and-title {
+        display: flex;
+        justify-content: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        align-items: center;
+        .image,.content {
+            flex: 1;
+        }
+        .content {
+            &>.title {
+                font-size: 2.65rem;
+                font-weight: 600;
+                margin-bottom: 1rem;
+            }
+            p {
+                font-size: 1.15rem;
+                margin-bottom: .5rem;
+                &::first-letter {
+                    font-size: 1.45rem;
+                    font-weight: 600;
+                }
+            }
+            .list {
+                margin-top: 1rem;
+                &>.title {
+                    font-size: 1.15rem;
+                    margin-bottom: .25rem;
+                }
+                ul {
+                    margin-left: 1rem;
+                    li {
+                        font-size: 1.15rem;
+                    }
+                }
+            }
+            .quantity {
+                margin-top: 1rem;
+                font-weight: 600;
+                font-size: 1.65rem;
+            }
+            .free-item {
+                margin-top: 1rem;
+                font-size: 1.25rem;
+            }
+        }
+        @media screen and (max-width: 991px){
+            flex-direction: column;
+            .content {
+                padding: 1rem;
+                .title {
+                    font-size: 1.65rem;
+                }
+                p {
+                    font-size: 1rem;
+                }
+                .list {
+                    margin-top: 1rem;
+                    &>.title {
+                        font-size: 1rem;
+                        margin-bottom: .25rem;
+                    }
+                    ul {
+                        margin-left: 1rem;
+                        li {
+                            font-size: 1rem;
+                        }
+                    }
+                }
+                .quantity {
+                    font-size: 1.25rem;
+                }
+            }
+        }
+    }
+    .tagline {
+        font-size: 2.65rem;
+        padding: 5rem 1rem;
+        background-color: #ececec;
+        @media screen and (max-width: 991px){
+            padding: 2rem 1rem;
+            font-size: 1.45rem;
+        }
+    }
+}

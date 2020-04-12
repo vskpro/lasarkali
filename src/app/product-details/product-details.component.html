@@ -1,0 +1,31 @@
+<div class="page-top-spacing">
+    <div class="product-data">
+      <div class="image-and-title">
+        <div class="image">
+          <img src="{{productData.image_url}}" class="img-auto">
+        </div>
+        <div class="content">
+          <div class="title">{{productData.title}}</div>
+          <p *ngFor="let para of productData.content.paras" >
+            {{para}}
+          </p>
+          <div class="list">
+            <div class="title" *ngIf="productData.content.list?.title" >{{productData.content.list?.title}}</div>
+            <div class="items" *ngIf="productData.content.list?.points" >
+              <ul>
+                <li *ngFor="let point of productData.content.list?.points">{{point}}</li>
+              </ul>
+            </div>
+          </div>
+          <div class="quantity" *ngIf="productData.content?.quantity" >
+            Available in: <span *ngFor="let quantity of productData.content.quantity; let last = last;">
+              {{quantity}}<span *ngIf="!last" >, </span> 
+            </span>
+          </div>
+          <div class="free-item" *ngIf="productData.content.freeItemLine" [innerHTML]="productData.content.freeItemLine"></div>
+        </div>
+      </div>
+      <div class="tagline text-center" [innerHTML]="productData.tagline">
+      </div>
+    </div>
+  </div>
